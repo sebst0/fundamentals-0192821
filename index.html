@@ -7,12 +7,92 @@
     <title>loading</title>
 </head>
 <body>
-    <section class="loading"> 
-        welcome to firts HTML class 
-        <span class="loading__autor"> - your friends at UFPSO</span>
-        <span class="loading__anime"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6MMYW9SsYOYC8dUJU0UuUrdW8I_O7kVjp77R6G0gHOQ&s=10" alt="loading"></span>
-        
+    <!-- Pantalla de carga -->
+     <div id="loader">
+        <section class="loading" role="status"> 
+            <h2>welcome to my website</h2>
+            <span class="loading__autor">
+                your friends at UFPSO
+            </span>
 
-    </section>
+            <span class="loading__anime" 
+            aria-hidden="true">
+            </span>
+        </section>
+     </div> 
+
+     <!-- Contenido principal -->
+      <div id="website" class="website" inert>
+        <header class="header">
+            <nav class="navbar container">
+                <a href="home" class="logo">
+                    UFPSO <span>.dev</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#services">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="container hero-content">
+                    <span class="subtitle">
+                        Learning web development
+                    </span>
+
+                    <h1>
+                        Build something <span>amazing</span>
+                    </h1>
+
+                    <p>Welcome to my website! I'm excited to share my journey in web development with you.</p>
+                </div>
+                <a href="#services" class="btn">Learn More</a>
+            </section>
+
+            <!-- ABOUT -->
+             <section id="about" class="about">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <p>I am a passionate web developer with experience in creating modern, responsive websites.</p>
+                </div>
+             </section>
+
+             <!-- cards -->
+              <section id="services" class="services">
+                <div class="container">
+                    <h2>what we r learning</h2>
+                    <div class="cards">
+                        <article class="card">
+                            <span class="card-icon">🌐</span>
+                            <h3>Web Development</h3>
+                            <p>Learn the fundamentals of web development and build your first website.</p>
+                        </article>
+
+                        <article class="card">
+                            <span class="card-icon">🎨</span>
+                            <h3>CSS & Design</h3>
+                            <p>Master CSS to create beautiful and responsive designs for your websites.</p>
+                        </article>
+
+                        <article class="card">
+                            <span class="card-icon">⚡</span>
+                            <h3>JavaScript</h3>
+                            <p>Dive into JavaScript and learn how to make your websites interactive.</p>
+                        </article>
+                    </div>
+                </div>
+              </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 UFPSO.dev. All rights reserved.</p>
+            </div>
+        </footer>
+      </div>
 </body>
 </html>
